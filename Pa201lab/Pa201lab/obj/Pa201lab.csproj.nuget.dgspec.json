@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj": {}
+    "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj": {
+    "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj",
         "projectName": "Pa201lab",
-        "projectPath": "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\Pa201lab.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

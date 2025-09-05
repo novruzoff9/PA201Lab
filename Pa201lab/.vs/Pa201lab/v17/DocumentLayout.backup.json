@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B020689-191C-4746-8F2B-91C5D1ABCEBF}|Pa201lab\\Pa201lab.csproj|c:\\users\\user\\desktop\\lab\\pa201lab\\pa201lab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B020689-191C-4746-8F2B-91C5D1ABCEBF}|Pa201lab\\Pa201lab.csproj|c:\\users\\user\\desktop\\pa201lab\\pa201lab\\pa201lab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B020689-191C-4746-8F2B-91C5D1ABCEBF}|Pa201lab\\Pa201lab.csproj|solutionrelative:pa201lab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\Program.cs",
               "RelativeDocumentMoniker": "Pa201lab\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Lab\\Pa201lab\\Pa201lab\\Program.cs*",
-              "RelativeToolTip": "Pa201lab\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PA201Lab\\Pa201lab\\Pa201lab\\Program.cs",
+              "RelativeToolTip": "Pa201lab\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T10:07:05.319Z",
               "EditorCaption": ""
