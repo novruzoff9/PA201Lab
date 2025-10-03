@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\bin\Debug\net8.0\RestaurantManagement.exe
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\bin\Debug\net8.0\RestaurantManagement.deps.json
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\bin\Debug\net8.0\RestaurantManagement.runtimeconfig.json
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\bin\Debug\net8.0\RestaurantManagement.dll
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\bin\Debug\net8.0\RestaurantManagement.pdb
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.AssemblyInfo.cs
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.sourcelink.json
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.dll
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\refint\RestaurantManagement.dll
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.pdb
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.genruntimeconfig.cache
+C:\Users\User\Desktop\PA201\10.03 - Lab5\Lab5\RestaurantManagement\obj\Debug\net8.0\ref\RestaurantManagement.dll
