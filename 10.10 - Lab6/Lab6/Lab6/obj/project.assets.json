@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "PA201.Calculator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/PA201NuGet.Calculator.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/PA201NuGet.Calculator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PA201.Calculator/1.0.0": {
+      "sha512": "IJT0s9CgaxTUf8mzli2G1EF1BjEuZwbXy+brg8IXEwHrebyVVAaTH6P/Ff32SPpWiCxF4tiaNgwnG7JZks6OGg==",
+      "type": "package",
+      "path": "pa201.calculator/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net8.0/PA201NuGet.Calculator.dll",
+        "pa201.calculator.1.0.0.nupkg.sha512",
+        "pa201.calculator.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "PA201.Calculator >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\PA201\\10.10 - Lab6\\Lab6\\Lab6\\Lab6.csproj",
+      "projectName": "Lab6",
+      "projectPath": "C:\\Users\\User\\Desktop\\PA201\\10.10 - Lab6\\Lab6\\Lab6\\Lab6.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\PA201\\10.10 - Lab6\\Lab6\\Lab6\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\User\\Desktop\\PA201\\10.13 - Nuget\\PA201NuGet\\packages": {},
+        "C:\\Users\\User\\Desktop\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "PA201.Calculator": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

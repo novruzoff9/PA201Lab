@@ -1,4 +1,4 @@
-# Lab 5 - 23 may
+# Lab 6 - 10 oktyabr
 ## Kart Sistemi:
 1. `Card` adında class yaradırıq:
     - Id
@@ -8,13 +8,13 @@
     - Bank (enum) (dəyərlər 3-cü sualda var)
     - Kartdan pul çıxılması üçün bir `WithDraw` adında metod olmalıdır. Bu metod parametr olaraq çıxılacaq məbləği qəbul edəcək. Balans yoxlanıldıqdan sonra əgər problem yoxdursa balansdan pul çıxılacaq. Və əgər proeses uğurla tamamlanarsa, `true` əks halda `false` dəyəri qaytaracaq.
     - `ToString` metodunu override edin
-3. `Bank` enum:
+2. `Bank` enum:
     - ABB, Kapital, Leo
-4. `ICardService` interfeysi:
+3. `ICardService` interfeysi:
     - Bütün Kartları qaytaran metod 
     - Siyahıya kart əlavə etmək üçün metod
     - Card nömrəsi qəbul edib, ona əsasən Card-ı qaytaran Indexer
-5. `CardService`
+4. `CardService`
     Kartlar, proyektdə olan `Data` folderi içində, `cards.json` faylında saxlanmalıdır. 
     - GetAll metodu json faylındakı bütün kartları qaytarmalıdır.
     - Indexer istifadə edərək, göndərilən `CardNumber`-ə uyğun onun məlumatlarını qaytaran metod
@@ -23,13 +23,13 @@
         Console.WriteLine(searchCard); // kartın məlumatları
         ```
     - Json faylına yeni kart əlavə edən metod. (Əgər eyni `CardNumber` əlavə olunmağa çalışılarsa `ConflictException` exception versin) (Əgər kart nömrəsi 16 rəqəmdən ibarət deyilsə `InvalidCardNumberException` xətası verin)
-6. Extension metodlar
+5. Extension metodlar
     - `MaskCardNumber()` bu metod kart-ın nömrəsini gizləyərək `1234 **** **** 5678` formatında qaytaracaq
     - `ExpenseAndGetBonus()` metodu, özlüyündə xərclənən məbləği qəbul edəcək. Kartın bu ödənişi edib, edə bilməyəcəyini yoxlandıqdan sonra kartın hansı bank-a aid olmasına görə onun `Bonus` property-sinin dəyərini artıracaq. Bonuslar belədir:
         - `Abb` kartı üçün 2%
         - `Leo` kartı üçün 4%
         - `Kapital` kartı üçün 5%
-7. Transactions:
+6. Transactions:
     1. `Transaction` adında class yaradılmalıdır:
         - Id
         - CardNumber

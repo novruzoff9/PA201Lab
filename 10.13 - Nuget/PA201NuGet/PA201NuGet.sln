@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PA201NuGet.Calculator", "PA201NuGet.Calculator\PA201NuGet.Calculator.csproj", "{EAC7C3CB-7EEF-4614-8A13-509880984C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PA201NuGet.CA", "PA201NuGet.CA\PA201NuGet.CA.csproj", "{0E080B4C-666A-408F-BBB4-E8811E78B9C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAC7C3CB-7EEF-4614-8A13-509880984C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC7C3CB-7EEF-4614-8A13-509880984C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC7C3CB-7EEF-4614-8A13-509880984C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC7C3CB-7EEF-4614-8A13-509880984C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E080B4C-666A-408F-BBB4-E8811E78B9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E080B4C-666A-408F-BBB4-E8811E78B9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E080B4C-666A-408F-BBB4-E8811E78B9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E080B4C-666A-408F-BBB4-E8811E78B9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86893DD8-F1AF-4DA5-A4AB-2CBFE466D0A6}
+	EndGlobalSection
+EndGlobal

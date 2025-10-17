@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>PA201.Calculator</id>
+    <version>1.0.0</version>
+    <authors>Novruzoff9</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/seninrepo</projectUrl>
+    <description>Calculator App</description>
+    <tags>Calculator C#</tags>
+    <repository type="git" url="https://github.com/seninrepo" commit="f46c91992b51aa773c5e383d5b60476c597f8a1d" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\User\Desktop\PA201\10.13 - Nuget\PA201NuGet\PA201NuGet.Calculator\bin\Release\net8.0\PA201NuGet.Calculator.pdb" target="lib\net8.0\PA201NuGet.Calculator.pdb" />
+  </files>
+</package>

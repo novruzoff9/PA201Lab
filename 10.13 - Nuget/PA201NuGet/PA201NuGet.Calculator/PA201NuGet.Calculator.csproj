@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+
+	  <!-- NuGet üçün lazımlılar -->
+	  <PackageId>PA201.Calculator</PackageId>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Version>1.0.0</Version>
+	  <Authors>Novruzoff9</Authors>
+	  <Company>PA201</Company>
+	  <Description>Calculator App</Description>
+	  <PackageTags>Calculator C#</PackageTags>
+	  <RepositoryUrl>https://github.com/seninrepo</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/seninrepo</PackageProjectUrl>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <IncludeSymbols>true</IncludeSymbols>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+  </PropertyGroup>
+
+</Project>
