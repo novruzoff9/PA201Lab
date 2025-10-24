@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.AssemblyInfo.cs
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.sourcelink.json
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\bin\Debug\net8.0\Lab7.Practise.exe
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\bin\Debug\net8.0\Lab7.Practise.deps.json
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\bin\Debug\net8.0\Lab7.Practise.runtimeconfig.json
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\bin\Debug\net8.0\Lab7.Practise.dll
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\bin\Debug\net8.0\Lab7.Practise.pdb
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.dll
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\refint\Lab7.Practise.dll
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.pdb
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\Lab7.Practise.genruntimeconfig.cache
+C:\Users\User\Desktop\PA201\10.17 - Lab7\Lab7\Lab7.Practise\obj\Debug\net8.0\ref\Lab7.Practise.dll

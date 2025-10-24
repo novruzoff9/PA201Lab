@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|c:\\users\\user\\desktop\\pa201\\10.17 - lab7\\lab7\\lab7.practise\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|solutionrelative:lab7.practise\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|c:\\users\\user\\desktop\\pa201\\10.17 - lab7\\lab7\\lab7.practise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|solutionrelative:lab7.practise\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|c:\\users\\user\\desktop\\pa201\\10.17 - lab7\\lab7\\lab7.practise\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|solutionrelative:lab7.practise\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|c:\\users\\user\\desktop\\pa201\\10.17 - lab7\\lab7\\lab7.practise\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A5B2089-A7B1-4606-BCBE-7FC77CA50F50}|Lab7.Practise\\Lab7.Practise.csproj|solutionrelative:lab7.practise\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Lab7.Practise\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Services\\ProductService.cs",
+              "RelativeToolTip": "Lab7.Practise\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T13:26:20.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "Lab7.Practise\\Interface\\IProductService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Interface\\IProductService.cs",
+              "RelativeToolTip": "Lab7.Practise\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T12:35:21.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Program.cs",
+              "RelativeDocumentMoniker": "Lab7.Practise\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Program.cs",
+              "RelativeToolTip": "Lab7.Practise\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T11:22:49.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Lab7.Practise\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PA201\\10.17 - Lab7\\Lab7\\Lab7.Practise\\Models\\Product.cs",
+              "RelativeToolTip": "Lab7.Practise\\Models\\Product.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T11:23:16.536Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
