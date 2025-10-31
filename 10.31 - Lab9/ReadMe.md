@@ -9,7 +9,7 @@
     - `Ticket`
         - Id
         - Qiyməti<br>
-    Hər 2 class-da `ToString` metodu override edilməlidir.
+    Hər 2 class-da `ToString` metodu override edilməlidir<br>
     Hər tədbirin özünə aid biletləri olacaq. Aradakı əlaqəni qurmaq lazımdır
 2. Ef Core paketləri yüklənməli, DbContext class-ı qurulmalı, connectionString verilməli və migration yaradılmalıdır
 3. `Event` üçün asinxron CRUD əməliyyatlarını özündə saxlayan `IEventService` yaradılmalıdır
@@ -23,7 +23,7 @@
         - Tədbirləri ən çox bilet satılandan ən satılana doğru satılmış bilet sayı ilə birlikdə göstərən metod
         - Tədbirləri, biletlərdən ən çox qazanc əldən edəndən ən az əldə edənə doğru sıralamaq
         - Yalnız gələcəkdə baş tutacaq olan tədbirləri göstərən metod
-        - Artıq baş tutmuş tədbirlərdən, Hər bir tədbir üçün neçə biletin alınıb, neçəsinin istifadə edildiyini göstərən metod
+        - Artıq baş tutmuş tədbirlərdən, Hər bir tədbir üçün neçə biletin alınıb, neçəsinin istifadə edildiyini göstərən metod<br>
         (Məs: Event1 - 5/8)
 8. Metodların təkmilləşmiş forması:
     - `IEventService`:
