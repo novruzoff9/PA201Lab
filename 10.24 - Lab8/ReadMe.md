@@ -1,4 +1,4 @@
-# Lab 7 - 21 Iyun
+# Lab 8 - 24 oktyabr
 ## SQL Hospital Management System
 1. Aşağıdakı cədvəllər yaradılacaq:
     - Patients 
