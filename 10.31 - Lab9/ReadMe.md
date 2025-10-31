@@ -1,6 +1,8 @@
 # Lab 9 - 31 oktyabr
 ## Bilet sistemi
 1. Yaradılmalı olan class-lar:
+    Hər 2 class-da `ToString` metodu override edilməlidir.
+    Hər tədbirin özünə aid biletləri olacaq. Aradakı əlaqəni qurmaq lazımdır
     - `Event`:
         - Id
         - Ad
@@ -9,8 +11,6 @@
     - `Ticket`
         - Id
         - Qiyməti
-    Hər 2 class-da `ToString` metodu override edilməlidir.
-    Hər tədbirin özünə aid biletləri olacaq. Aradakı əlaqəni qurmaq lazımdır
 2. Ef Core paketləri yüklənməli, DbContext class-ı qurulmalı, connectionString verilməli və migration yaradılmalıdır
 3. `Event` üçün asinxron CRUD əməliyyatlarını özündə saxlayan `IEventService` yaradılmalıdır
 4. `Program.cs`-de Event-lə bağlı bütün metodları yoxlanılmaılıdr
