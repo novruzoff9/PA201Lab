@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #2d3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+header h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+header nav ul li a:hover{
+    color: #1bbc9b;
+}
+
+
+
+
+#hero{
+    background-color: #1bbc9b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hero .img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+#hero h1{
+    font-size: 84px;
+    margin-bottom: 20px;
+}
+#hero .divider{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#hero .divider .icon{
+    margin: 0 15px;
+    font-size: 24px;
+}
+#hero .divider .line{
+    width: 100px;
+    height: 5px;
+    border-radius: 6px;
+    background-color: white;
+}
+.downloadBtn{
+    display: inline-block;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background-color: #2d3e50;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk - Vikipediya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            background-color: #f6f6f6;
+            color: #202122;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 5px solid #667eea;
+        }
+
+        nav h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        nav ul li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+
+        nav a {
+            color: #0645ad;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            color: #444;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #667eea;
+        }
+
+        ul, ol {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin: 8px 0;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        table caption {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        table tbody tr:hover {
+            background-color: #e9ecef;
+            transition: background-color 0.3s ease;
+        }
+
+        blockquote {
+            background-color: #f9f9f9;
+            border-left: 5px solid #667eea;
+            margin: 25px 0;
+            padding: 20px;
+            font-style: italic;
+            font-size: 1.1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        blockquote footer {
+            margin-top: 10px;
+            text-align: right;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        dl {
+            margin: 20px 0;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        mark {
+            background-color: #fff3cd;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px dashed #ddd;
+            margin: 30px 0;
+        }
+
+        a {
+            color: #0645ad;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        details {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #667eea;
+            padding: 10px;
+            user-select: none;
+        }
+
+        summary:hover {
+            background-color: #dee2e6;
+            border-radius: 5px;
+        }
+
+        details code {
+            display: block;
+            margin-top: 15px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        footer h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        footer ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer ol li {
+            margin: 8px 0;
+        }
+
+        footer p {
+            margin-top: 20px;
+            border-top: 1px solid #555;
+            padding-top: 15px;
+        }
+
+        small {
+            font-size: 0.85em;
+            color: #aaa;
+        }
+
+        sup {
+            color: #0645ad;
+            font-weight: bold;
+        }
+
+        strong {
+            color: #202122;
+            font-weight: bold;
+        }
+
+        article {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #764ba2;
+        }
+
+        /* Responsive dizayn */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            table th, table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elon Musk</h1>
+        <p><em>Amerikalı sahibkar və mühəndis</em></p>
+    </header>
+
+    <nav>
+        <h3>Mündəricat</h3>
+        <ul>
+            <li><a href="#haqqinda">Haqqında</a></li>
+            <li><a href="#erkenheyat">Erkən həyatı</a></li>
+            <li><a href="#karyera">Karyerası</a></li>
+            <li><a href="#sirketler">Şirkətləri</a></li>
+            <li><a href="#mukafatlar">Mükafatlar</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="haqqinda">
+            <h2>Haqqında</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" 
+                 alt="Elon Musk" 
+                 width="300">
+            <p><strong>Elon Reeve Musk</strong> (doğum tarixi: 28 iyun 1971) - Cənubi Afrika əsilli amerikalı sahibkar, mühəndis və investor.</p>
+            <p>O, <strong>Tesla</strong>, <strong>SpaceX</strong>, <strong>X Corp</strong> (əvvəlki Twitter) və digər şirkətlərin rəhbəridir.</p>
+        </section>
+
+        <hr>
+
+        <section id="erkenheyat">
+            <h2>Erkən həyatı</h2>
+            <p>Elon Musk <time datetime="1971-06-28">28 iyun 1971-ci</time> ildə Cənubi Afrika Respublikasının Pretoriya şəhərində doğulub.</p>
+            <h3>Ailə</h3>
+            <ul>
+                <li>Atası: <strong>Errol Musk</strong> (mühəndis)</li>
+                <li>Anası: <strong>Maye Musk</strong> (model və dietoloq)</li>
+                <li>Qardaşı: Kimbal Musk</li>
+                <li>Bacısı: Tosca Musk</li>
+            </ul>
+            
+            <h3>Təhsili</h3>
+            <ol>
+                <li>Waterkloof House Preparatory School</li>
+                <li>Pretoria Boys High School</li>
+                <li>Queen's University (Kanada) - 1989-1992</li>
+                <li>University of Pennsylvania - Fizika və İqtisadiyyat (1992-1997)</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="karyera">
+            <h2>Karyerası</h2>
+            <article>
+                <h3>İlk addımlar</h3>
+                <p>1995-ci ildə Musk qardaşı Kimbal ilə birlikdə <strong>Zip2</strong> şirkətini yaratdı.</p>
+                <blockquote>
+                    <p>"Mən insanları Mars-a göndərmək istəyirəm, çünki bu, insan sivilizasiyasının gələcəyi üçün vacibdir."</p>
+                    <footer>— <cite>Elon Musk</cite></footer>
+                </blockquote>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="sirketler">
+            <h2>Şirkətləri</h2>
+            
+            <table border="1" cellpadding="10" cellspacing="0">
+                <caption><strong>Elon Musk-un əsas şirkətləri</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Şirkət</th>
+                        <th>İl</th>
+                        <th>Sahə</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zip2</strong></td>
+                        <td>1995</td>
+                        <td>Proqram təminatı</td>
+                        <td>Satıldı (1999)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>X.com / PayPal</strong></td>
+                        <td>1999</td>
+                        <td>Ödəniş sistemləri</td>
+                        <td>Satıldı (2002)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SpaceX</strong></td>
+                        <td>2002</td>
+                        <td>Kosmik texnologiya</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tesla</strong></td>
+                        <td>2004</td>
+                        <td>Elektrik avtomobilləri</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Neuralink</strong></td>
+                        <td>2016</td>
+                        <td>Beyin-kompüter interfeysi</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td><strong>The Boring Company</strong></td>
+                        <td>2016</td>
+                        <td>Tunel tikintisi</td>
+                        <td>Aktiv</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>SpaceX</h3>
+            <p><strong>Space Exploration Technologies Corp.</strong> - kosmik gəmilər və raketlər istehsal edən şirkət.</p>
+            <dl>
+                <dt><strong>Falcon 9</strong></dt>
+                <dd>Yenidən istifadə oluna bilən raket sistemi</dd>
+                
+                <dt><strong>Starship</strong></dt>
+                <dd>Mars-a səyahət üçün nəzərdə tutulan kosmik gəmi</dd>
+                
+                <dt><strong>Dragon</strong></dt>
+                <dd>Beynəlxalq Kosmik Stansiyaya yük və astronavt daşıyan kapsul</dd>
+            </dl>
+
+            <h3>Tesla</h3>
+            <p>Tesla elektrik avtomobilləri istehsal edən şirkətdir. Məhsulları:</p>
+            <ul>
+                <li>Model S <small>(sedan)</small></li>
+                <li>Model 3 <small>(kompakt sedan)</small></li>
+                <li>Model X <small>(SUV)</small></li>
+                <li>Model Y <small>(crossover)</small></li>
+                <li>Cybertruck <small>(elektrik pikap)</small></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="mukafatlar">
+            <h2>Mükafatlar və nailiyyətlər</h2>
+            <ul>
+                <li>2007 - R&D Magazine-in İlin İnnovatoru</li>
+                <li>2010 - Fédération Aéronautique Internationale-nin qızıl medalı</li>
+                <li>2021 - Time jurnalının "İlin Adamı"</li>
+                <li>2022 - Dünyanın ən zəngin adamı <sup>[1]</sup></li>
+            </ul>
+
+            <h3>Statistika</h3>
+            <p>Net kapital (təxmini): <mark>$180-250 milyard</mark></p>
+            <p>Patentlər: 100<sup>+</sup></p>
+            <p>İşçilər: SpaceX - 13,000, Tesla - 127,000</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Əlaqə və sosial media</h2>
+            <p>Əlavə məlumat üçün:</p>
+            <ul>
+                <li>Veb sayt: <a href="https://www.tesla.com" target="_blank">Tesla.com</a></li>
+                <li>Veb sayt: <a href="https://www.spacex.com" target="_blank">SpaceX.com</a></li>
+                <li>X (Twitter): <a href="https://x.com/elonmusk" target="_blank">@elonmusk</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>İstinadlar</h4>
+        <ol>
+            <li>Bloomberg Billionaires Index - 2022</li>
+            <li>Forbes Magazine - The World's Billionaires</li>
+            <li>SpaceX Official Website</li>
+        </ol>
+        
+        <p><small>&copy; 2024 Vikipediya. Bu məqalə təlim məqsədilə hazırlanmışdır.</small></p>
+        <p><small>Son yenilənmə: <time datetime="2024-11-16">16 Noyabr 2024</time></small></p>
+    </footer>
+
+    <br><br>
+
+    <!-- HTML elementləri haqqında qeyd -->
+    <details>
+        <summary><strong>Bu səhifədə istifadə olunan HTML təqləri</strong></summary>
+        <p>Bu səhifədə aşağıdakı HTML təqləri istifadə edilib:</p>
+        <code>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;, &lt;h1&gt;-&lt;h4&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;a&gt;, &lt;img&gt;, &lt;table&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;blockquote&gt;, &lt;cite&gt;, &lt;time&gt;, &lt;mark&gt;, &lt;small&gt;, &lt;sup&gt;, &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;, &lt;details&gt;, &lt;summary&gt;, &lt;code&gt;</code>
+    </details>
+
+</body>
+</html>
