@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menyusu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍽️ Restoran Menyusu</h1>
+            <p>Ən dadlı yeməkləri seçin</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="categories">
+            <h2>Kateqoriyalar</h2>
+            <div id="category-list" class="category-list">
+                <button class="category-btn active" data-category="all">Hamısı</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Məhsullar</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Restoran Menyusu. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

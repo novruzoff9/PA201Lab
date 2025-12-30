@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="createCategoryForm" method="POST">
+        <label for="categoryName">Category Name:</label>
+        <input type="text" id="categoryName" name="name" required>
+        <button type="submit">Create Category</button>
+    </form>
+
+
+    <script>
+        document.getElementById("createCategoryForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            const categoryName = document.getElementById("categoryName").value;
+            const token = localStorage.getItem("authToken");
+            fetch("http://localhost:5000/api/Categories", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer " + token
+                },
+                body: JSON.stringify({ name: categoryName })
+            }).then(response => {
+                if (response.ok) {
+                    alert("Category created successfully!");
+                    document.getElementById("createCategoryForm").reset();
+                } else {
+                    alert("Error creating category.");
+                }
+            }).catch(error => {
+                console.error("Error:", error);
+                alert("Error creating category.");
+            });
+        });
+    </script>
+</body>
+</html>
