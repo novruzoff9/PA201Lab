@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Update Slider";
+}
+@model Slider
+<div class="container">
+    <div class="row">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ButtonText"></label>
+                <input asp-for="ButtonText" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="ButtonText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="File"></label>
+                <input asp-for="File" accept="image/*" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="File" class="text-danger"></span>
+                <img id="previewImage" height="200" width="400" src="~/assets/image/bg-images/@Model.ImageUrl" alt="" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ButtonUrl">Email address</label>
+                <input asp-for="ButtonUrl" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="ButtonUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order">Email address</label>
+                <input asp-for="Order" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="Order" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+        var fileInput = document.querySelector('input[type="file"]');
+        var fileReader=new FileReader();
+        fileInput.addEventListener('change',function(e){
+            var file = e.target.files[0];
+            fileReader.onloadend = function(e) {
+               let img=document.querySelector("#previewImage");
+               img.setAttribute("src",e.target.result)// This is the base64 encoded image
+            }
+            fileReader.readAsDataURL(file);
+        });
+   </script>
+
+}
+

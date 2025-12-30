@@ -1,0 +1,92 @@
+@model Slider
+
+<div class="modal-header">
+    <h5 class="modal-title">
+        <i class="fas fa-images"></i> Slider Details
+    </h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row mb-3">
+        <div class="col-12 text-center">
+            <img src="~/assets/image/bg-images/@Model.ImageUrl" alt="@Model.Title" class="img-fluid rounded shadow" style="max-height: 300px; object-fit: cover;" />
+        </div>
+    </div>
+    
+    <hr />
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-hashtag"></i> ID:</strong>
+        </div>
+        <div class="col-md-9">
+            @Model.Id
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-heading"></i> Title:</strong>
+        </div>
+        <div class="col-md-9">
+            @Model.Title
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-align-left"></i> Description:</strong>
+        </div>
+        <div class="col-md-9">
+            @Model.Description
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-mouse-pointer"></i> Button Text:</strong>
+        </div>
+        <div class="col-md-9">
+            <span class="badge badge-info">@Model.ButtonText</span>
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-link"></i> Button URL:</strong>
+        </div>
+        <div class="col-md-9">
+            <a href="@Model.ButtonUrl" target="_blank" class="text-primary">
+                @Model.ButtonUrl <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-sort-numeric-up"></i> Order:</strong>
+        </div>
+        <div class="col-md-9">
+            <span class="badge badge-warning">@Model.Order</span>
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <strong><i class="fas fa-image"></i> Image URL:</strong>
+        </div>
+        <div class="col-md-9">
+            <code>@Model.ImageUrl</code>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-warning">
+        <i class="fas fa-edit"></i> Edit Slider
+    </a>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        <i class="fas fa-times"></i> Close
+    </button>
+</div>

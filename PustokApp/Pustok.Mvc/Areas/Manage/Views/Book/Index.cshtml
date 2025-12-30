@@ -1,0 +1,117 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Book List";
+ 
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Book Management</h2>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="fas fa-plus"></i> Add New Book
+        </a>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>AuthorName</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var book in Model)
+                    {
+                        <tr>
+                            <td>@book.Id</td>
+                            <td>
+                                <img src="~/assets/image/products/@book.MainImageUrl" alt="@book.Name" class="img-thumbnail" style="width: 120px; height: 70px; object-fit: cover;" />
+                            </td>
+                            <td>@book.Name</td>
+                            <td>
+                                @if (book.Description.Length > 50)
+                                {
+                                    @book.Description.Substring(0, 50)
+                        
+                                    <text>...</text>
+                                }
+                                else
+                                {
+                                    @book.Description
+                                }
+                            </td>
+                            <td>
+                                @book.Price.ToString("C")
+                            </td>
+                            <td>@book.Author.FullName</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a href="" data-id="@book.Id" class="btn btn-sm btn-info viewDetails" title="Details">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a asp-action="Update" asp-route-id="@book.Id" class="btn btn-sm btn-warning" title="Update">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@book.Id" class="btn btn-sm btn-danger deleteBook" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle"></i> No books found. <a asp-action="Create" class="alert-link">Create one now</a>.
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // View Details with Modal
+          
+
+            // Delete Slider
+            $('.deleteBook').on('click', function(e) {
+                e.preventDefault();
+                var link = $(this).attr('href');
+                Swal.fire({
+                    title: "Do you want to delete this slider?",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Delete",
+                    denyButtonText: `Don't delete`
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        fetch(link)
+                            .then(res => {
+                                console.log(res)
+                                console.log(res.ok)
+                                if(res.ok) {
+                                    Swal.fire("Deleted!", "", "success").then(() => {
+                                        window.location.reload();
+                                    });
+                                } else {
+                                    Swal.fire("Error!", "Could not delete the slider.", "error");
+                                }
+                            })
+                    }
+                });
+            });
+        });
+    </script>
+}
