@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/OnionArch.Application/OnionArch.Application.csproj" />
+    <Project Path="src/Core/OnionArch.Domain/OnionArch.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/OnionArch.Infrastructure/OnionArch.Infrastructure.csproj" />
+    <Project Path="src/Infrastructure/OnionArch.Persistance/OnionArch.Persistance.csproj" />
+  </Folder>
+  <Folder Name="/src/Presentation/">
+    <Project Path="src/Presentation/OnionArch.WebAPI/OnionArch.WebAPI.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
