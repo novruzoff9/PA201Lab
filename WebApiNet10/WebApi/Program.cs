@@ -1,9 +1,13 @@
-using Microsoft.EntityFrameworkCore;
-using Scalar.AspNetCore;
-using WebApi.Data;
+using Hangfire;
+using Hangfire.PostgreSql;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
+using StackExchange.Redis;
 using System.Text;
+using WebApi.Data;
+using WebApi.Jobs;
 using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -51,6 +55,28 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddMemoryCache();
+
+
+// Hangfire
+builder.Services.AddHangfire(config =>
+{
+    config.UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddHangfireServer();
+
+
+
+// Redis
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    return ConnectionMultiplexer.Connect(
+        "127.0.0.1:6379,abortConnect=false");
+});
+
+builder.Services.AddScoped<IRedisService, RedisService>();
+
 var app = builder.Build();
 
 
@@ -61,10 +87,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors();
+app.UseHangfireDashboard();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+RecurringJob.AddOrUpdate<ProductStatusJob>(
+    "product-status-job",                     
+    job => job.ExecuteAsync(),
+    "*/1 * * * *"
+);
 
 app.Run();

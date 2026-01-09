@@ -56,7 +56,6 @@ public class ProductsController(AppDbContext dbContext) : ControllerBase
     }
 
     [HttpPost]
-    [Authorize]
     public async Task<IActionResult> CreateProduct(CreateProductDto productDto)
     {
         var categoryExists = await dbContext.Categories.AnyAsync(c => c.Id == productDto.CategoryId);

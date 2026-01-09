@@ -1,25 +1,35 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using System.Security.Claims;
 using WebApi.Data;
 using WebApi.Dto.Categories;
 using WebApi.Dto.Products;
 using WebApi.Models;
+using WebApi.Services;
 
 namespace WebApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class CategoriesController
-    (AppDbContext dbContext,
+public class CategoriesController(
+    AppDbContext dbContext,
     ILogger<CategoriesController> logger,
-    IConfiguration configuration)
-    : ControllerBase
+    IConfiguration configuration,
+    IRedisService redisService
+    ) : ControllerBase
 {
     [HttpGet]
     public async Task<IActionResult> GetCategories()
     {
+        var categoriesCache = await redisService.GetValueAsync<List<CategoryDto>>("categories");
+        if (categoriesCache != null)
+        {
+            logger.LogInformation("Categories retrieved from Redis cache.");
+            return Ok(categoriesCache);
+        }
+
         var categories = await dbContext.Categories
             .Include(c => c.Products)
             .Select(c => new CategoryDto
@@ -36,11 +46,12 @@ public class CategoriesController
             })
             .ToListAsync();
 
+        await redisService.SetValueAsync("categories", categories, TimeSpan.FromSeconds(20));
+
         return Ok(categories);
     }
 
     [HttpPost]
-    [Authorize]
     public async Task<IActionResult> CreateCategory(CreateCategoryDto categoryDto)
     {
         var category = new Category
