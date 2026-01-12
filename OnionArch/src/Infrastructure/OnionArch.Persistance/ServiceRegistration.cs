@@ -15,7 +15,7 @@ public static class ServiceRegistration
         public void AddPersistenceServices(IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
         }
