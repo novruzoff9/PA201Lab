@@ -24,6 +24,12 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 |-------|--------|-------|
 | [24 Oktyabr](#lab-8---24-oktyabr) | SQL və Verilənlər Bazası | [📁 Lab8](./10.24%20-%20Lab8) |
 
+### 🔹 ORM Entity FrameWork
+
+| Tarix | Mövzu | Əlavə |
+|-------|--------|-------|
+| [31 Oktyabr](#lab-9---31-oktyabr) | Ticket System (ORM) | [📁 Lab9](./10.31%20-%20Lab9) |
+
 ### 🔹 Front-End Development
 
 | Tarix | Mövzu | Əlavə |
@@ -37,9 +43,17 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 | Proyekt | Texnologiya | Əlavə |
 |---------|-------------|-------|
 | [FrontApp](#frontapp---e-commerce-frontend) | HTML, CSS, JavaScript | [📁 FrontApp](./FrontApp) |
+| [FrontAppReact](#frontappreact---react-typescript-application) | React, TypeScript, shadcn/ui | [📁 FrontAppReact](./FrontAppReact) |
 | [PustokApp](#pustokapp---kitab-mağazası) | ASP.NET Core MVC, EF Core | [📁 PustokApp](./PustokApp) |
 | [RazorPages](#razorpages) | ASP.NET Core Razor Pages | [📁 RazorPages](./RazorPages) |
 | [WebApiNet10](#webapinet10) | ASP.NET Core Web API | [📁 WebApiNet10](./WebApiNet10) |
+
+### 🔹 Advanced Architecture Projects
+
+| Proyekt | Arxitektura | Əlavə |
+|---------|-------------|-------|
+| [OnionArch](#onionarch---onion-architecture) | Onion Architecture, Clean Code | [📁 OnionArch](./OnionArch) |
+| [MessageBrokers](#messagebrokers---messaging-patterns) | Message Broker Pattern | [📁 MessageBrokers](./MessageBrokers) |
 
 ---
 
@@ -174,7 +188,7 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 
 ### Lab 9 - 31 Oktyabr
 **📖 Ticket System**
-- Database-first approach
+- Code-first approach
 - ADO.NET əsasları
 - Database connectivity
 - Transaction management
@@ -263,6 +277,44 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 
 ---
 
+### FrontAppReact - React TypeScript Application
+**📖 Modern React Application with shadcn/ui**
+- **Texnologiyalar:** React 18, TypeScript, Vite, shadcn/ui, TailwindCSS
+- **UI Components:**
+  - shadcn/ui component library
+  - Radix UI primitives
+  - Responsive design with Tailwind
+  - Dark mode support (next-themes)
+- **State Management:**
+  - Zustand for global state
+  - React Query (@tanstack/react-query) for server state
+  - React Hook Form for form management
+- **Routing & Navigation:**
+  - React Router DOM v6
+  - Protected routes
+  - Navigation menu
+- **Form & Validation:**
+  - React Hook Form
+  - Zod validation schemas
+  - Custom form components
+- **Features:**
+  - Component-based architecture
+  - TypeScript type safety
+  - Context API for theme management
+  - Custom hooks
+  - Recharts for data visualization
+  - Toast notifications (Sonner)
+  - Responsive panels
+- **Development:**
+  - Vite for fast development
+  - ESLint configuration
+  - Hot Module Replacement (HMR)
+  - SWC for fast refresh
+
+**🔗 Folder:** [FrontAppReact](./FrontAppReact)
+
+---
+
 ### PustokApp - Kitab Mağazası
 **📖 Tam funksional E-Commerce Web Application**
 - **Texnologiyalar:** ASP.NET Core MVC 8.0, Entity Framework Core, SQL Server
@@ -332,6 +384,80 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 
 ---
 
+### OnionArch - Onion Architecture
+**📖 Layered Architecture Pattern Implementation**
+- **Arxitektura:** Onion Architecture (Clean Architecture)
+- **Layers:**
+  - **Core Layer:**
+    - **Domain:** Entities, Value Objects, Domain Events
+    - **Application:** Use Cases, Business Logic, Interfaces
+  - **Infrastructure Layer:**
+    - Data Access (EF Core)
+    - External Services
+    - Infrastructure implementations
+  - **Presentation Layer:**
+    - API Controllers
+    - ViewModels/DTOs
+    - Dependency configuration
+- **Design Principles:**
+  - Dependency Inversion Principle (DIP)
+  - Separation of Concerns
+  - Domain-Driven Design (DDD)
+  - SOLID principles
+  - Dependency flows inward
+- **Xüsusiyyətlər:**
+  - Loosely coupled architecture
+  - Testable code structure
+  - Business logic isolation
+  - Infrastructure independence
+  - Clean separation of layers
+- **Benefits:**
+  - Maintainability
+  - Scalability
+  - Testability
+  - Technology independence
+
+**🔗 Folder:** [OnionArch](./OnionArch)
+
+---
+
+### MessageBrokers - Messaging Patterns
+**📖 Message Broker Pattern Demonstration**
+- **Konsept:** Asynchronous messaging between distributed systems
+- **Layihə Strukturu:**
+  - **WithMessageBroker:**
+    - Producer application (message sender)
+    - Consumer application (message receiver)
+    - Message broker middleware integration
+  - **WithoutMessageBroker:**
+    - Direct communication demonstration
+    - Comparison with broker pattern
+- **Message Broker Benefits:**
+  - Decoupling services
+  - Asynchronous communication
+  - Load balancing
+  - Reliability through queuing
+  - Scalability
+  - Message persistence
+- **Patterns:**
+  - Publish/Subscribe pattern
+  - Message Queue pattern
+  - Request/Response pattern
+- **Use Cases:**
+  - Microservices communication
+  - Event-driven architecture
+  - Background job processing
+  - System integration
+- **Learning Objectives:**
+  - Understanding message broker architecture
+  - Implementing producer/consumer pattern
+  - Comparing direct vs broker-based communication
+  - Understanding distributed system challenges
+
+**🔗 Folder:** [MessageBrokers](./MessageBrokers)
+
+---
+
 ## 🛠️ İstifadə Olunan Texnologiyalar
 
 ### Backend Technologies
@@ -347,6 +473,11 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling
 - **JavaScript (ES6+)** - Client-side logic
+- **React 18** - Modern UI library
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool
+- **TailwindCSS** - Utility-first CSS framework
+- **shadcn/ui** - Re-usable component library
 - **Bootstrap** - CSS framework
 - **Responsive Design** - Mobile-first approach
 
@@ -360,7 +491,16 @@ Bu repositorya PA201 qrupu üçün hazırladığım bütün praktiki məşğəl�
 - **Visual Studio Code** - Code editor
 - **SQL Server Management Studio (SSMS)** - Database management
 - **NuGet Package Manager** - Dependency management
+- **npm** - Node package manager
 - **Git** - Version control
+
+### Design Patterns & Architectures
+- **MVC Pattern** - Model-View-Controller
+- **Repository Pattern** - Data access abstraction
+- **Onion Architecture** - Layered architecture
+- **Clean Architecture** - Domain-centric design
+- **Message Broker Pattern** - Async messaging
+- **Dependency Injection** - IoC pattern
 
 ---
 
@@ -398,6 +538,20 @@ dotnet run
 
 # Və ya birbaşa browser-də açın:
 # index.html faylına iki dəfə klik edin
+```
+
+### React Layihələri
+
+```bash
+# FrontAppReact layihəsini işə salmaq:
+cd FrontAppReact
+npm install
+npm run dev
+
+# Browser-də açılacaq: http://localhost:5173
+
+# Production build:
+npm run build
 ```
 
 ### SQL Tapşırıqları
@@ -445,14 +599,18 @@ Bu kurs boyunca aşağıdakı mövzular əhatə olunub:
 
 ```
 PA201/
-├── C# Labs (Lab 1-9)           # C# əsasları və OOP
-├── Frontend Labs (Lab 10-12)   # HTML, CSS, JavaScript
-├── Full-Stack Projects          # Complete applications
-│   ├── FrontApp                # E-commerce frontend
-│   ├── PustokApp               # Kitab mağazası (MVC)
-│   ├── RazorPages              # Razor Pages app
-│   └── WebApiNet10             # RESTful API
-└── README.md                   # Bu fayl
+├── C# Labs (Lab 1-9)              # C# əsasları və OOP
+├── Frontend Labs (Lab 10-12)      # HTML, CSS, JavaScript
+├── Full-Stack Projects            # Complete applications
+│   ├── FrontApp                   # E-commerce frontend (Vanilla JS)
+│   ├── FrontAppReact              # Modern React + TypeScript app
+│   ├── PustokApp                  # Kitab mağazası (MVC)
+│   ├── RazorPages                 # Razor Pages app
+│   └── WebApiNet10                # RESTful API
+├── Advanced Architecture          # Design patterns & architectures
+│   ├── OnionArch                  # Onion/Clean Architecture
+│   └── MessageBrokers             # Message broker patterns
+└── README.md                      # Bu fayl
 ```
 
 ---
